@@ -80,6 +80,11 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--clr-white);
+}
+a:hover {
+  text-decoration: none;
+  color: var(--clr-yellow);
 }
 img:not(.logo) {
   width: 100%;
@@ -166,6 +171,12 @@ main {
 .image2{
   max-width:150px;
   max-height:150px;
+  padding: 10px;
+  float: left;
+}
+.image3{
+  max-width:450px;
+  max-height:450px;
   padding: 10px;
   float: left;
 }
@@ -350,10 +361,15 @@ COLUMNS
 ================================================
 --------------------------------------------*/
 /* Create two equal columns that floats next to each other */
-.column {
+.column-left {
   float: left;
-  width: 50%;
-  padding: 10px;
+  padding: 1px;
+  width: 35%;
+}
+.column-right {
+  float: left;
+  padding: 1px;
+  width: 65%;
 }
 /* Clear floats after the columns */
 .row:after {
